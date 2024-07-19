@@ -136,5 +136,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Variables for CORS
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    'http://taskyfe.s3-website-us-east-1.amazonaws.com',
+]
 CORS_ALLOW_CREDENTIALS = True
